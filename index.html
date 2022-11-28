@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container input{
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <section class="container">
+        <input type="text" id="frstinput">
+        <input type="text" id="secinput">
+        <input type="text" id="thirdinput">
+        <button onclick="click()">Submit</button>
+    </section>
+
+    <script>
+
+        function inputs(){
+            var x = [];
+            var a =parseInt(document.getElementById("frstinput").value);
+            var b =parseInt(document.getElementById("secinput").value);
+            var c =parseInt(document.getElementById("thirdinput").value);
+            
+            x.push(a,b,c)
+            let p = x.sort()
+            let q = p.toString()
+
+            console.log(q);
+            let r = document.addEventListener("click",inputs);
+        
+        }
+ 
+
+
+
+    </script>
+
+
+
+
+</body>
+</html>
